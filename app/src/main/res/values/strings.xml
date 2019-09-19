@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AppNova</string>
+    <string name="caixa_mensagem">Mensagem</string>
+    <string name="titulo_caixa_mensagem">Entrada</string>
 </resources>

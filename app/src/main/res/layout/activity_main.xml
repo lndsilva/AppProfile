@@ -40,14 +40,16 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:padding="10dp">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_person"
+                    android:drawableRight="@drawable/ic_person"
                     android:drawableTint="#FF4081"
                     android:hint="Nome do usuário"
+
                     android:inputType="textEmailAddress"
                     android:singleLine="true" />
 
@@ -56,9 +58,12 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#FF4081">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -66,6 +71,9 @@
                     android:drawableTint="#FF4081"
                     android:hint="Senha do usuário"
                     android:inputType="numberPassword"
+                    android:letterSpacing="0.5"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
                     android:singleLine="true" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -73,17 +81,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
+                android:autoLink="web"
+                android:linksClickable="true"
                 android:paddingTop="5dp"
                 android:text="Esqueceu a senha?" />
 
             <Button
+                android:id="@+id/btnEntrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="22dp"
                 android:background="#d67601"
-                android:textAppearance="?attr/textAppearanceBody1"
                 android:text="Entrar"
                 android:textAllCaps="false"
+                android:textAppearance="?attr/textAppearanceBody1"
                 android:textColor="#fff"
                 android:textSize="18sp" />
 
